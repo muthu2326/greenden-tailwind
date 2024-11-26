@@ -17,6 +17,7 @@
     >
       <h1 class="text-2xl">Greeden</h1>
       <svg
+        id="menu-icon"
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
@@ -43,6 +44,32 @@
         </li>
       </ul>
     </nav>
+
+    <!-- Side Nav Bar -->
+    <section
+      class="bg-green-100 fixed top-0 z-20 text-center transition-all duration-1000"
+      id="sidenav"
+      style="width: 50%; height: 100vh; right: -50%"
+    >
+      <div class="text-right p-5">
+        <p id="close-nav" class="inline cursor-pointer">X</p>
+      </div>
+      <ul class="flex flex-col gap-5 text-gray-600 md:flex">
+        <li>
+          <a class="hover:underline hover:text-black" href="index.html">Home</a>
+        </li>
+        <li>
+          <a class="hover:underline hover:text-black" href="products.html"
+            >Products</a
+          >
+        </li>
+        <li>
+          <a class="hover:underline hover:text-black" href="contact.html"
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </section>
 
     <!-- Products -->
     <section class="m-5 p-5">
@@ -116,5 +143,6 @@
 
      <!-- Scipts -->
    <script src="./products.js"></script>
+   <script src="./index.js"></script>
   </body>
 </html>
